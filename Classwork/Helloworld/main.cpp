@@ -20,13 +20,17 @@ using namespace std;
 //Execution Begins here
 int main(int argc, char** argv) {
     // Declare and initialize variables
-    
+    int pay, payRate=10, hrsWkt;
     //Input data
     
     //Calculate or map inputs to outputs
-    
+    cout<<"Input hours worked";
+    cin<<hrsWkt;
+    cout<<(hrsWkt<=40? pay=hrsWkt*payRate:pay= hrsWkt(payRate*1.5)-hrsWkt *.5)<<endl;
+    cout<<"This is the pay"<< pay;
+  
     //Output the results
-    cout<<"Hello World"<<endl;
+    
     //Exit stage right
     return 0;
 }
