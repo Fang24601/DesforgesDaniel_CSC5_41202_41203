@@ -14,30 +14,29 @@ using namespace std;
 /*
  * 
  */
+const float pi=4*atan(1);
 int main(int argc, char** argv) {
+    //Problem to solve
+    
+    cout<<"Solving for pi"<<endl;
+    cout<<"The Finite sum for pi"<<endl;
     //declare variables
-    
-    cout<<(pi)<<endl;
-    
-    cout<<"input x of e^x computtation"<<endl;
-    cin>>x;
-    //calculate e^x
-    for(int n=1;n<=nTerms;n++){
+    float apxPi=1;
+    unsigned int nTerms;
+    char sign= -1;
+  
+    //Input terms
+    cout<<"Input terms to approximate pi"<<endl;
+    cin>>nTerms;
+    //Approx Pi
+    for(int i=2, j=3; i<=nTerms; i++, j+=2){
+        apxPi+=1/j*sign;
         
-        
-    
-    unsigned int  factN=1;
-    
-    for(int i=1;i<=n;i++){
-        factN*=1;
+      
     }
-    cout<<n<<"!="<<factN<<endl;
-    // calc e^x
-    etox+=pow(x,n)/factN;
-    }
-    //ooutput
-    cout<<"The exact value of e^"<<x<<"="<<exp(x)<<endl;
-    cout<<"The approx value of e^"<<x<<"="<<etox<<endl;
+    //output
+    cout<<"The exact value of PI= "<<pi<<endl;
+    cout<<"The approx value of PI ="<< apxPi<<endl;
     return 0;
 }
 
